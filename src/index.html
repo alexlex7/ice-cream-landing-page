@@ -1,108 +1,48 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
-    <include src="./partials/test.html"></include>
+    <meta name="description" content="Ice Cream - 100% natural ice cream" />
+    <meta
+      name="keywords"
+      content="ice cream, 100% natural ice cream, 100% natural, order ice cream made from natural milk, ice cream made with passion"
+    />
+    <title>Ice Cream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/button-up.html"></include>
 
-    <section class="products-section">
-      <div class="container">
-        <h2 class="products-first-title">100% natural</h2>
-        <h3 class="products-second-title">products</h3>
-        <ul class="products-list">
-          <li class="products-list-item">
-                            <picture>
-                    <source 
-                    srcset="./.webp 1x, ./@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                    <source 
-                    srcset="./ 1x, ./@2x.png 2x" media="(min-width: 1200px)">
-
-                    <source 
-                    srcset="./.webp 1x, ./@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-                    <source 
-                    srcset="./ 1x, ./@2x.png 2x" media="(min-width: 768px)">
-
-                    <source 
-                    srcset="./.webp 1x, ./@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
-                    <source 
-                    srcset="./ 1x, ./@2x.png 2x" media="(min-width: 320px)">
-
-
-                    <img class="team-img" src="../" alt="" >
-                </picture>
-                <h4 class="product-list-title">ice cream</h4>
-                <p class="product-list-point">...</p>
-                <p class="products-list-content">This strawberry ice cream is the freshest of fresh. Its so creamy and has the perfect fresh strawberry flavor. We just add strawberries, whole and pureed, and we never add any colour. Sprinkle some toasted hazelnuts on top.</p>
-                <button class="product-list-button"></button>
-
-
-          </li>
-          <li class="products-list-item">
-                            <picture>
-                    <source 
-                    srcset="./.webp 1x, ./@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                    <source 
-                    srcset="./ 1x, ./@2x.png 2x" media="(min-width: 1200px)">
-
-                    <source 
-                    srcset="./.webp 1x, ./@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-                    <source 
-                    srcset="./ 1x, ./@2x.png 2x" media="(min-width: 768px)">
-
-                    <source 
-                    srcset="./.webp 1x, ./@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
-                    <source 
-                    srcset="./ 1x, ./@2x.png 2x" media="(min-width: 320px)">
-
-
-                    <img class="team-img" src="../" alt="" >
-                </picture>
-
-                <h4 class="product-list-title">ice coffee</h4>
-                <p class="product-list-point">...</p>
-                <p class="products-list-content">Wykonane z dwóch naturalnych składników, używamy 100% ziaren kawy Arabica i świeżego mleka. Ziarna są ostrożnie prażone i mielone przed zaparzeniem w zimnej wodzie, aby uzyskać doskonale zbalansowany i pełny smak.</p>
-                <button class="product-list-button"></button>
-
-          </li>
-          <li class="products-list-item">
-                            <picture>
-                    <source 
-                    srcset="./.webp 1x, ./@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                    <source 
-                    srcset="./ 1x, ./@2x.png 2x" media="(min-width: 1200px)">
-
-                    <source 
-                    srcset="./.webp 1x, ./@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-                    <source 
-                    srcset="./ 1x, ./@2x.png 2x" media="(min-width: 768px)">
-
-                    <source 
-                    srcset="./.webp 1x, ./@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
-                    <source 
-                    srcset="./ 1x, ./@2x.png 2x" media="(min-width: 320px)">
-
-
-                    <img class="team-img" src="../" alt="" >
-                </picture>
-
-                <h4 class="product-list-title">milkshakes</h4>
-                <p class="product-list-point">...</p>
-                <p class="products-list-content">A milkshake, or simply shake, is a drink that is traditionally made by blending cow's milk, ice cream, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, fruit syrup, or whole fruit into a thick, sweet, cold mixture.</p>
-                <button class="product-list-button"></button>
-
-          </li>
-        </ul>
-      </div>
-    </section>
-  
-<include src="./partials/customer-reviews.html"></include>
-  
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/button-up.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script> -->
   </body>
 </html>

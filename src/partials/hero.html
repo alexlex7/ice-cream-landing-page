@@ -1,0 +1,103 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero-left-side">
+      <div class="wrapper-container">
+        <h1 class="hero-title">
+          ice cream made with
+          <span class="hero-title-theme-accent"> passion</span>
+        </h1>
+        <button type="button " class="info-button" aria-label="read more">
+          Products
+        </button>
+        <button type="button" class="info-button" aria-label="read more">
+          How it’s made?
+        </button>
+      </div>
+      <div class="milk-decanter-wrapper">
+        <picture class="milk-decanter">
+          <source
+            srcset="
+              ./images/hero/hero-milk-bio-eco-desktop.png    1x,
+              ./images/hero/hero-milk-bio-eco-desktop@2x.png 2x
+            "
+            media="(min-width:1280px)" />
+          <source
+            srcset="
+              ./images/hero/hero-milk-bio-eco-tablet.png    1x,
+              ./images/hero/hero-milk-bio-eco-tablet@2x.png 2x
+            "
+            media="(min-width:768px)" />
+          <img
+            src=" ./images/hero/hero-milk-bio-eco-desktop.png"
+            alt="milk-decanter"
+        /></picture>
+
+        <div class="hero-paragraph-wrapper">
+          <p class="hero-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <button
+            class="button hero-button"
+            type="button"
+            aria-label="read more"
+          >
+            <svg class="hero-button-icon">
+              <use href="./images/icon-sprite.svg#icon-go"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <picture class="ice-cream-picture">
+      <source
+        srcset="
+          ./images/hero/hero-ice-cream-desktop.png    1x,
+          ./images/hero/hero-ice-cream-desktop@2x.png 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          ./images/hero/hero-ice-cream-tablet.png    1x,
+          ./images/hero/hero-ice-cream-tablet@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/hero-ice-cream-mobile.png    1x,
+          ./images/hero/hero-ice-cream-mobile@2x.png 2x
+        "
+        media="(min-width:480px)"
+      />
+
+      <img src="./images/hero/hero-ice-cream-mobile.png " alt="ice cream" />
+    </picture>
+
+    <picture class="girl-so-tasty">
+      <source
+        srcset="
+          ./images/hero/girl-so-tasty-desktop.png    1x,
+          ./images/hero/girl-so-tasty-desktop@2x.png 2x
+        "
+        media="(min-width:1280px)" />
+      <source
+        srcset="
+          ./images/hero/girl-so-tasty-tablet.png     1x,
+          ./images/hero/girl-so-tasty-desktop@2x.png 2x
+        "
+        media="(min-width:768px)" />
+      <img
+        src=" ./images/hero/girl-so-tasty-desktop.png "
+        alt="girl tries an ice cream"
+    /></picture>
+    <div class="counter-container">
+      <span class="cafes-counter">16</span>
+      <p class="cafes-counter-description">cafes</p>
+      <span class="trucks-counter">23</span>
+      <p class="trucks-counter-description">food trucks</p>
+    </div>
+  </div>
+</section>

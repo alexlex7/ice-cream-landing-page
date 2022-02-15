@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @include adaptive-before-phone {
+    padding: 0 !important;
+  }
+
+  @include adaptive-for-phone {
+    padding: 0 5px;
+  }
+  @include adaptive-before-tablet {
+    padding: 0 !important;
+  }
+  @include adaptive-for-tablet {
+    width: 730px;
+    padding: 0 19px;
+  }
+
+  @include adaptive-for-desktop {
+    width: 1080px;
+    padding: 0 100px;
+  }
+}

@@ -1,0 +1,10 @@
+.gallery {
+  background: linear-gradient(to bottom, var(--secondary-bg-color) 40%, var(--primary-light-bg-color) 40%);
+}
+
+.gallery-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

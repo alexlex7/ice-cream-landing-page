@@ -1,0 +1,212 @@
+@include adaptive-before-phone {
+  .container {
+  width: 320px;
+  padding: 0 20px;
+  }
+}
+.customer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.customer-img-girl {
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.customer-card {
+  position: relative;
+  background-color: var(--light-shaded-bg-color);
+  padding: 43px 60px 26px 60px;
+
+  @include adaptive-for-tablet {
+    padding: 47px 36px 26px 60px;
+  }
+
+  @include adaptive-for-desktop {
+    padding: 43px 54px 26px;
+  }
+
+   &::before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 28px;
+    left: 70px;
+    width: 54px;
+    height: 40px;
+    background-image: url("../images/customer-reviews/quotation-marks.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    @include adaptive-for-tablet {
+    left: 40px;
+    }
+
+    @include adaptive-for-desktop {
+      left: 50px;
+    }
+  }
+}
+
+// .customer-card-icon {
+//   position: relative;
+//   top: -43px;
+//   left: 10px;
+//   bottom: 0;
+//   width: 54px;
+//   height: 40px;
+// }
+.customer-card-text {
+  padding: 3px 20px 5px 15px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--light-shaded-bg-color),
+    var(--light-shaded-bg-color) 30px,
+    var(--primary-line-color) 30px,
+    var(--primary-line-color) 31px
+  );
+  // to top,
+  //   var(--primary-line-color),
+  //   var(--primary-line-color) 1px,
+  //   var(--light-shaded-bg-color) 1px,
+  //   var(--light-shaded-bg-color) 31px
+  // );
+
+  @include adaptive-for-tablet {
+    padding: 3px 44px 5px 20px;
+    }
+
+    @include adaptive-for-desktop {
+      padding: 3px 35px 5px 28px;
+    }
+}
+.customer-text {
+  position: relative;
+  z-index: 2;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+
+  @include adaptive-for-tablet {
+    font-size: 14px;
+    line-height: 2.142;
+    }
+
+    @include adaptive-for-desktop {
+      font-size: 16px;
+      line-height: 1.875;
+    }
+
+}
+.customer-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.customer-point {
+        position: relative;
+        display: block;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--secondary-accent-color); 
+
+        &::after {
+        position: relative;
+        content: "";
+        display: block;
+        top: -4px;
+        right: 10px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--secondary-accent-color); 
+        }
+
+        &::before {
+        position: relative;
+        content: "";
+        display: block;
+        left: 10px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--secondary-accent-color); 
+        }
+}
+.customer-slade-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.customer-slade-point {
+  margin-right: 18px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.customer-slade-icon-home {
+  width: 12px;
+ height: 12px;
+ fill: var(--accent-color);
+}
+.customer-slade-icon-point {
+ width: 12px;
+ height: 12px;
+}
+@include adaptive-for-phone {
+  .customer {
+    width: 100%;
+  }
+  .container {
+      width: 480px;
+      padding: 0 20px;
+  }
+}
+@include adaptive-for-tablet {
+  .container {
+      width: 700px;
+      padding: 0 34px;
+  }
+  .customer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  }
+  .customer-card {
+    margin:0 35px;
+  }
+  .customer-img-girl {
+  padding-bottom: 20px;
+  }
+  .customer-point {
+        top: 25px;
+  }
+  .customer-name {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  }
+}
+@include adaptive-for-desktop {
+  .container {
+      width: 1130px;
+      padding: 0 75px;
+  }
+  .customer {
+  padding-top: 120px;
+  padding-bottom: 130px;
+  }
+  .customer-card {
+    margin:0 100px;
+  }
+}
